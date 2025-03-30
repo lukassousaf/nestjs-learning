@@ -1,0 +1,27 @@
+GET http://localhost:3000/usuario
+###
+
+GET http://localhost:3000/usuario/1
+###
+
+DELETE http://localhost:3000/usuario/3
+###
+POST  http://localhost:3000/usuario
+content-type: application/json
+
+{
+    "nome": "Fulano221",
+    "email": "fulano21232@fulano1.com",
+    "senha": "123456111"
+}
+
+###
+
+PATCH http://localhost:3000/usuario/4
+content-type: application/json
+
+{
+    "nome": "João Victr2",
+    "email": "jao@leiteiro.com",
+    "senha": "12345622"
+}
